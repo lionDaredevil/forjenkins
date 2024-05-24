@@ -13,6 +13,19 @@
 					"name": "register a new valid user",
 					"event": [
 						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.variables.set(\"url\",pm.iterationData.get(\"url\"));",
+									
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
 							"listen": "test",
 							"script": {
 								"exec": [
